@@ -2,11 +2,16 @@ using System;
 
 namespace listaExercicios01
 {
-    class exercicio10
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+		static void Main(string[] args)
+		{
+			double fahrenheit, celsius;
+			
+			Console.WriteLine("Por favor, informe a temperatura em graus Fahrenheit:");
+			fahrenheit = Convert.ToDouble(Console.ReadLine());
+			
+			celsius = (fahrenheit - 32) / 1.8;
+			
+			Console.WriteLine("{0:F1}ºF equivale(m) a {1:F1}ºC.", fahrenheit, celsius);
+		}
+	}
 }

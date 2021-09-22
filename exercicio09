@@ -1,12 +1,23 @@
 using System;
 
 namespace listaExercicios01
-{
-    class exercicio09
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+	{
+		static void Main(string[] args)
+		{
+			decimal nota1, nota2, nota3, mediaFinal;
+			
+			Console.WriteLine("Por favor, informe o valor da primeira nota:");
+			nota1 = Convert.ToDecimal(Console.ReadLine());
+			
+			Console.WriteLine("Agora, informe o valor da segunda nota:");
+			nota2 = Convert.ToDecimal(Console.ReadLine());
+			
+			Console.WriteLine("E por último, o valor da terceira nota:");
+			nota3 = Convert.ToDecimal(Console.ReadLine());
+			
+			mediaFinal = ((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / 10;
+			
+			Console.WriteLine("A média final foi igual a {0:F2}.", mediaFinal);
+			}
+	}
 }
