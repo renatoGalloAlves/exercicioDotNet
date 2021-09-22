@@ -2,8 +2,8 @@ using System;
 
 namespace listaExercicios01
 {
-    class Program
-    {
+    class exercicio08
+    
         static void Main(string[] args)
         {
             Console.WriteLine("Bom Dia!!");

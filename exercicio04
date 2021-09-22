@@ -2,7 +2,7 @@ using System;
 
 namespace listaExercicios01
 {
-    class Program
+    class exercicio04
     {
         static void Main(string[] args)
         {
