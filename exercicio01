@@ -1,0 +1,25 @@
+using System;
+
+namespace ListaExercicios01
+{
+	class Exercicio01
+	{
+		static void Main(string[] args)
+		{
+			int valorA = 10;
+			int valorB = 20;
+			int trocarValor;
+			
+			Console.WriteLine("O valor da variável A é: " + valorA + "\n" +
+			"O valor da variável B é: " + valorB);
+			
+			trocarValor = valorA;
+			valorA = valorB;
+			valorB = trocarValor;
+			
+			Console.WriteLine("Agora...\n" +
+				"O valor da variável A é: " + valorA + "\n" +
+				"O valor da variável B é: " + valorB);
+		}
+	}
+}

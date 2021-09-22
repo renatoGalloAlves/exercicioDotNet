@@ -1,0 +1,27 @@
+using System;
+
+namespace ListaExercicios01
+{
+	class exercicio02
+	{
+		static void Main(string[] args)
+		{
+			int numero = 0;
+			bool valorValido = false;
+			do
+			{
+				try
+				{
+					Console.WriteLine("Por favor, digite um número inteiro: ");
+					numero = Convert.ToInt32(Console.ReadLine());
+					valorValido = true;
+				} catch (Exception)
+				{
+					Console.WriteLine("Ops! O valor informado não é válido.");
+					valorValido = false;
+					}
+			} while (!valorValido);
+		Console.WriteLine("O antecessor do número " + numero + " é " + (numero - 1) + ".");
+		}
+	}
+}

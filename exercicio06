@@ -1,0 +1,27 @@
+using System;
+
+namespace listaExercicios01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Bom Dia!!");
+
+            Console.WriteLine("Por Favor, digite o salário: ");
+            string strSalario = Console.ReadLine(); 
+
+            Console.WriteLine("Por Favor, digite porcentagem do Reajuste:");
+            string strReajustePorcentagem = Console.ReadLine(); 
+
+            double salarioAtual = Convert.ToInt32(strSalario);
+            double porcentagemReajuste = Convert.ToInt32(strReajustePorcentagem);
+            double aumento = salarioAtual *  porcentagemReajuste /100;
+
+            double novoSalario = salarioAtual + aumento;
+
+            Console.WriteLine( " Seu novo salário é : R$ " + novoSalario );
+
+        }
+    }
+}

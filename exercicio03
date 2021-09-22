@@ -1,0 +1,54 @@
+using System;
+
+namespace ListaExercicios01
+{
+	class exercicio03
+	{
+		static void Main(string[] args)
+		{
+			decimal baseRetangulo = 0M, alturaRetangulo = 0M;
+			bool valorValido = false;
+			do
+			{
+				try
+				{
+					Console.WriteLine("Por favor, informe o valor da base do retângulo:");
+					baseRetangulo = Convert.ToDecimal(Console.ReadLine());
+					valorValido = true;
+					if (baseRetangulo < 1)
+					{
+						Console.WriteLine("Ops! A base do retângulo deve medir no mínimo 1.");
+						valorValido = false;
+					}
+					} catch (Exception){
+					Console.WriteLine("Ops! Não é permitido digitar letras ou caracteres especiais aqui.");
+					valorValido = false;
+				}
+			} while (!valorValido);
+			do
+			{
+				try
+				{
+					Console.WriteLine("Agora, informe o valor da altura do retângulo:");
+					alturaRetangulo = Convert.ToDecimal(Console.ReadLine());
+					valorValido = true;
+					if (alturaRetangulo < 1)
+					{
+						Console.WriteLine("Ops! A altura do retângulo deve medir no mínimo 1.");
+						valorValido = false;
+					}
+					else if (alturaRetangulo == baseRetangulo)
+					{
+						Console.WriteLine("Ops! A altura do retângulo deve ser diferente da base.");
+						valorValido = false;
+					}
+				} catch (Exception)
+				{
+					Console.WriteLine("Ops! Não é permitido digitar letras ou caracteres especiais aqui.");
+					valorValido = false;
+				}
+			} while (!valorValido);
+			Console.WriteLine("O valor da área de um retângulo de base {0:F4} e altura {1:F4} é igual a {2:F4}.", baseRetangulo, alturaRetangulo, (baseRetangulo * alturaRetangulo));
+		}
+	}
+}

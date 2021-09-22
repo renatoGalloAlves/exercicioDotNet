@@ -1,0 +1,33 @@
+using System;
+
+namespace listaExercicios01
+{
+	class Exercicio05
+	{
+		static void Main(string[] args)
+		{
+			decimal totalEleitores, votosValidos, votosBrancos, votosNulos, porcentagemVotosValidos, porcentagemVotosBrancos, porcentagemVotosNulos;
+			
+			Console.WriteLine("Por favor, informe a quantidade total de eleitores deste município:");
+			totalEleitores = Convert.ToDecimal(Console.ReadLine());
+			
+			Console.WriteLine("Agora, informe a quantidade de votos válidos:");
+			votosValidos = Convert.ToDecimal(Console.ReadLine());
+			
+			Console.WriteLine("Agora, a quantidade de votos brancos:");
+			votosBrancos = Convert.ToDecimal(Console.ReadLine());
+			
+			Console.WriteLine("E por último, a quantidade de votos nulos:");
+			votosNulos = Convert.ToDecimal(Console.ReadLine());
+			
+			porcentagemVotosValidos = (votosValidos / totalEleitores) * 100;
+			porcentagemVotosBrancos = (votosBrancos / votosValidos) * 100;
+			porcentagemVotosNulos = (votosNulos / votosValidos) * 100;
+			
+			Console.WriteLine("Neste município foram registrados {0} eleitores.", totalEleitores);
+			Console.WriteLine("Quantidade de votos válidos: {0} - ({1:F2}%).", votosValidos, porcentagemVotosValidos);
+			Console.WriteLine("Quantidade de votos brancos: {0} - ({1:F2}%).", votosBrancos, porcentagemVotosBrancos);
+			Console.WriteLine("Quantidade de votos nulos: {0} - ({1:F2}%).", votosNulos, porcentagemVotosNulos);
+			}
+	}
+}

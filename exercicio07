@@ -1,0 +1,26 @@
+using System;
+
+namespace listaExercicios01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Bom Dia!!");
+
+            Console.WriteLine("Digite o custo de fabrica do carro: ");
+            string strCustoFabrica = Console.ReadLine(); 
+
+            double custoFabrica = Convert.ToInt32(strCustoFabrica);
+            double prctDistribuidor = custoFabrica * 28 /100;
+            double prctImposto = custoFabrica * 45 /100;
+            double precoFinal = custoFabrica + prctDistribuidor + prctImposto;
+
+            Console.WriteLine( " O preço Final do carro é : R$ " + precoFinal );
+
+        }
+    }
+}
+
+
+

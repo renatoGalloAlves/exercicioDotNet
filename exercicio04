@@ -1,0 +1,52 @@
+using System;
+
+namespace listaExercicios01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        Console.WriteLine("Bom Dia!!");
+
+        Console.WriteLine("Por Favor, digite SUA IDADE em anos:");
+        string strIdadeAnos = Console.ReadLine();   
+
+        Console.WriteLine("Por Favor, digite SUA IDADE em meses:");
+        string strIdadeMeses = Console.ReadLine(); 
+
+        Console.WriteLine("Por Favor, digite SUA IDADE em dias:");
+        string strIdadeDias = Console.ReadLine();  
+        
+        int idadeAnos = 0;
+        try {
+          idadeAnos = Convert.ToInt32(strIdadeAnos);
+        }
+        catch (Exception ex){
+          Console.WriteLine ("Favor por somente numeros");
+        }
+
+         int idadeMeses = 0;
+        try {
+          idadeMeses = Convert.ToInt32(strIdadeMeses);
+        }
+        catch (Exception ex){
+          Console.WriteLine ("Favor por somente numeros");
+        }
+
+         int idadeDias = 0;
+        try {
+          idadeDias = Convert.ToInt32(strIdadeDias);
+        }
+        catch (Exception ex){
+          Console.WriteLine ("Favor por somente numeros");
+        }
+
+        int convercaoMeses = idadeAnos * 12;
+        int convercaoDias = (convercaoMeses + idadeMeses) * 30;
+        int resultadoDias = idadeDias + convercaoDias;
+
+        Console.WriteLine( " Sua idade em dias é " + resultadoDias + "dias");
+
+        }
+    }
+}

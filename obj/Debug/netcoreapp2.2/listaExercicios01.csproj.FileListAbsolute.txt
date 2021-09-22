@@ -1,0 +1,11 @@
+/home/gallo/Área de Trabalho/CSharpe_itau/listaExercicios01/bin/Debug/netcoreapp2.2/listaExercicios01.deps.json
+/home/gallo/Área de Trabalho/CSharpe_itau/listaExercicios01/bin/Debug/netcoreapp2.2/listaExercicios01.runtimeconfig.json
+/home/gallo/Área de Trabalho/CSharpe_itau/listaExercicios01/bin/Debug/netcoreapp2.2/listaExercicios01.runtimeconfig.dev.json
+/home/gallo/Área de Trabalho/CSharpe_itau/listaExercicios01/bin/Debug/netcoreapp2.2/listaExercicios01.dll
+/home/gallo/Área de Trabalho/CSharpe_itau/listaExercicios01/bin/Debug/netcoreapp2.2/listaExercicios01.pdb
+/home/gallo/Área de Trabalho/CSharpe_itau/listaExercicios01/obj/Debug/netcoreapp2.2/listaExercicios01.csprojAssemblyReference.cache
+/home/gallo/Área de Trabalho/CSharpe_itau/listaExercicios01/obj/Debug/netcoreapp2.2/listaExercicios01.csproj.CoreCompileInputs.cache
+/home/gallo/Área de Trabalho/CSharpe_itau/listaExercicios01/obj/Debug/netcoreapp2.2/listaExercicios01.AssemblyInfoInputs.cache
+/home/gallo/Área de Trabalho/CSharpe_itau/listaExercicios01/obj/Debug/netcoreapp2.2/listaExercicios01.AssemblyInfo.cs
+/home/gallo/Área de Trabalho/CSharpe_itau/listaExercicios01/obj/Debug/netcoreapp2.2/listaExercicios01.dll
+/home/gallo/Área de Trabalho/CSharpe_itau/listaExercicios01/obj/Debug/netcoreapp2.2/listaExercicios01.pdb
