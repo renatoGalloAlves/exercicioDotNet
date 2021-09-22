@@ -13,7 +13,7 @@ namespace listaExercicios01
 
             double custoFabrica = Convert.ToInt32(strCustoFabrica);
             double prctDistribuidor = custoFabrica * 28 /100;
-            double prctImposto = custoFabrica * 45 /100;
+            double prctImposto = (custoFabrica + prctDistribuidor) * 45 /100;
             double precoFinal = custoFabrica + prctDistribuidor + prctImposto;
 
             Console.WriteLine( " O preço Final do carro é : R$ " + precoFinal );
